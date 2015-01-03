@@ -5,8 +5,8 @@
  * Date: 1/2/15
  * Time: 11:38 PM
  */
-set_time_limit(0);
-Class UnderstandingPhalconController extends \Phalcon\Mvc\Controller
+//set_time_limit(0);
+Class PhalconController extends \Phalcon\Mvc\Controller
 {
     static $count=0;
     public function getSampleDataAction()
@@ -55,7 +55,7 @@ Class UnderstandingPhalconController extends \Phalcon\Mvc\Controller
         }
         else
         {
-            UnderstandingPhalconController::$count++;
+            PhalconController::$count++;
             echo 'Successfully loaded'.   $customer->name . 'records';
         }
     }
